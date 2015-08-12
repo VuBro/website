@@ -1,0 +1,76 @@
+/*@import "normalize";*/
+@import "compass";
+@import "bootstrap-custom";
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  font-family: 'Oswald', sans-serif;
+
+  .banner {
+    @include background-image(url("../../images/banner.png"));
+    height: 250px;
+  }
+
+  .navbar-inverse {
+    .navbar-brand {
+      img {
+        height: $navbar-height/2;
+      }
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .banner {
+      background-size: 100%;
+    }
+  }
+}
+
+$date-badge-height: 55px;
+
+.date-text {
+  border: 1px solid #d2d2d2;
+  @include border-radius(10px);
+  color: $freifunk-magenta;
+  height: $date-badge-height+2;
+
+  @include clearfix;
+
+  div {
+    margin: 5px;
+  }
+
+  .date {
+    width: 35px; height: $date-badge-height;
+    background: #fcfcfc;
+    border-right: 1px solid #d2d2d2;
+    margin: 0 10px 0 0;
+    float: left;
+    @include background-image(linear-gradient(top, #fcfcfc 0%, #dad8d8 100%));
+    @include border-radius(10px);
+    p {
+      //font-family: Helvetica, sans-serif;
+      font-size: 20px; text-align: center; color: #9e9e9e;
+
+      span {
+        background: $freifunk-yellow;
+        @include background-image(linear-gradient(top, $freifunk-yellow 0%, darken($freifunk-yellow, 20%) 100%));
+        font-size: 10px;
+        font-weight: bold;
+        color: $white;
+        text-transform: uppercase;
+        display: block;
+        border-top: 1px solid darken($freifunk-yellow, 10%);
+        @include border-radius(0 0 10px 10px);
+        padding: 6px 0 6px 0;
+      }
+    }
+  }
+}
+
+aside {
+  .row {
+    padding-top: 10px;
+  }
+}

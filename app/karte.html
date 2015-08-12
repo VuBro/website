@@ -1,0 +1,36 @@
+@@include("header.html")
+
+@@include("menu.html", {
+"home": "",
+"karte": "class=\"active\""
+})
+</header>
+<div class="container">
+    <div class="content">
+        <div class="col-md-9">
+            <h1>Übersichtskarte</h1>
+
+            <h2>Karte des Freifunk Ruhrgebiet:</h2>
+
+            <iframe src="https://map.freifunk-ruhrgebiet.de/Luenen/geomap.html"
+                       width="100%"
+                       height="500"
+                       scrolling="auto"
+                       frameborder="0">
+                Keine IFrames</iframe>
+
+            <h2>Karte des Freifunk Dortmund:</h2>
+
+            <iframe src="https://map.ffdo.de/meshviewer/"
+                       width="100%"
+                       height="500"
+                       scrolling="auto"
+                       frameborder="0">
+                Keine IFrames</iframe>
+        </div>
+        <div class="col-md-3">
+            @@include("sidebar.html")
+        </div>
+    </div>
+</div>
+@@include("footer.html")
