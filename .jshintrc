@@ -1,0 +1,13 @@
+{
+  "globalstrict": true,
+  "browser" : true,
+  "curly" : true,
+  "quotmark" : true,
+  "strict" : true,
+  "shadow" : false,
+  "sub" : false,
+  "globals": {
+    "angular": true,
+    "FileAPI": true
+  }
+}
