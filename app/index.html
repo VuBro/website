@@ -1,23 +1,48 @@
-@@include("header.html")
+@@include("header.html", {
+"title": "Freifunk Lünen - Startseite"
+})
 
 @@include("menu.html", {
-    "home": "class=\"active\"",
-    "karte": ""
+"home": "class=\"active\""
 })
-        </header>
-        <div class="container">
-            <div class="content">
-                <div class="col-md-9">
-                    <h1>Willkommen beim Freifunk Lünen</h1>
+</header>
+<div class="container">
+    <div class="content">
+        <div class="col-md-9">
+            <h1>Willkommen beim Freifunk Lünen</h1>
 
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            <h2>Freifunk Lünen - WLAN kostenfrei und flächendeckend in deiner Stadt!</h2>
+            Auf diesen Seiten erfährst Du alles über das Freifunk-Projekt in Lünen. Wir haben uns das Ziel gesetzt,
+            Freifunk in Lünen zu fördern.
+            <br />
+            Wir bauen unser eigenes Bürgerdatennetz - mach mit! Seit der Gründung des Vereins Freifunk Rheinland e.V. im
+            Jahr 2011 haben sich in über 40 Städten NRWs lokale Communities gegründet, die den Netzausbau vorantreiben.
+            Wir möchten eine davon sein mit dem Bestreben, Lünen flächendeckend mit einem kostenfreien und für jedermann
+            verfügbaren WLAN-Netz auszustatten.
 
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </div>
-                <div class="col-md-3">
-                    @@include("sidebar.html")
-                </div>
-            </div>
+            <br /><br />
+            <b>Wenn du uns unterstützen möchtest, komme zu einem unserer Treffen im Bürgerhaus Horstmar. Der jeweils nächste Termin findest du unten auf dieser Seite.</b>
+            <!-- START: Modules Anywhere -->
+            <script type="text/javascript">function iFrameHeight() {
+                var h = 0;
+                if (!document.all) {
+                    h = document.getElementById('blockrandom').contentDocument.height;
+                    document.getElementById('blockrandom').style.height = h + 60 + 'px';
+                } else if (document.all) {
+                    h = document.frames('blockrandom').document.body.scrollHeight;
+                    document.all.blockrandom.style.height = h + 20 + 'px';
+                }
+            }</script>
+
+            <iframe id="blockrandom" name="" src="https://player.vimeo.com/video/64814620" width="100%" height="300px"
+                    scrolling="no" frameborder="0" class="wrapper">
+                Keine IFrames
+            </iframe>
         </div>
+        <div class="col-md-3">
+            @@include("sidebar.html")
+        </div>
+    </div>
+</div>
 
 @@include("footer.html")
