@@ -34,6 +34,7 @@ $date-badge-height: 55px;
   @include border-radius(10px);
   color: $freifunk-magenta;
   height: $date-badge-height+2;
+  font-size: .9em;
 
   @include clearfix;
 
@@ -42,7 +43,8 @@ $date-badge-height: 55px;
   }
 
   .date {
-    width: 35px; height: $date-badge-height;
+    width: 35px;
+    height: $date-badge-height;
     background: #fcfcfc;
     border-right: 1px solid #d2d2d2;
     margin: 0 10px 0 0;
@@ -64,6 +66,18 @@ $date-badge-height: 55px;
         border-top: 1px solid darken($freifunk-yellow, 10%);
         @include border-radius(0 0 10px 10px);
         padding: 6px 0 6px 0;
+      }
+    }
+  }
+}
+
+.date-text-external {
+  @extend .date-text;
+  .date {
+    p {
+      span {
+        background: $freifunk-magenta;
+        @include background-image(linear-gradient(top, $freifunk-magenta 0%, darken($freifunk-magenta, 20%) 100%));
       }
     }
   }
