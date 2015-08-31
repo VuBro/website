@@ -34,7 +34,7 @@ $date-badge-height: 55px;
   @include border-radius(10px);
   color: $freifunk-magenta;
   height: $date-badge-height+2;
-  font-size: .9em;
+  font-size: .85em;
 
   @include clearfix;
 
