@@ -34,8 +34,10 @@ module.exports = function (grunt) {
         concat: {
             js: {
                 src: [
+                    'app/vendor/jquery/dist/jquery.min.js',
+                    'app/vendor/bootstrap-sass-official/assets/javascripts/bootstrap.min.js'
                 ],
-                dest: ''
+                dest: 'dist/js/freifunk.js'
             }
         },
         compass: {
@@ -96,7 +98,7 @@ module.exports = function (grunt) {
         'copy:font',
         'compass:prod',
         'useminPrepare',
-//        'concat',
+        'concat',
         'uglify',
 //        'cssmin',
         'usemin'
@@ -110,7 +112,7 @@ module.exports = function (grunt) {
         'copy:main',
         'includereplace',
         'copy:font',
-//        'concat',
+        'concat',
         'compass:dev'
     ]);
 };
